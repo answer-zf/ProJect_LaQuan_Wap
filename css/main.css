@@ -1,0 +1,290 @@
+/**
+ * @Descripttion:网站全局样式表文件，字体使用思源
+ * @Author: zf
+ * @Date: 2020-06-01 10:16:27
+ */
+@font-face {
+    font-family: 'SourceHanSansCN';
+    src: url('../fonts/SourceHanSansCN-Medium.woff2') format('woff2'),
+        url('../fonts/SourceHanSansCN-Medium.woff') format('woff'),
+        url('../fonts/SourceHanSansCN-Medium.ttf') format('truetype'),
+        url('../fonts/SourceHanSansCN-Medium.eot') format('embedded-opentype'),
+        url('../fonts/SourceHanSansCN-Medium.svg') format('svg');
+}
+
+html,
+body {
+    font-family: 'SourceHanSansCN' !important;
+    background-color: #fff;
+}
+
+em {
+    font-style: normal;
+    color: #e80313;
+}
+a:hover {
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+}
+label {
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.background-color-dominant {
+    background-color: #00998c !important;
+}
+.background-color-gray {
+    background-color: #f4f4f4 !important;
+}
+.zf-box-shadow {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 1px 1px 5px #99999933 !important;
+}
+.zf-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* index */
+
+.index-navbar .navbar-brand {
+    padding: 0;
+}
+.index-navbar .nav-item {
+    text-align: center;
+}
+.index-navbar .nav-item .nav-link {
+    font-weight: 700;
+    color: rgb(236, 236, 236);
+}
+.index-navbar .nav-item .nav-link:hover {
+    color: #fff;
+}
+.index-navbar .nav-item .nav-link.active {
+    color: #f31f2d;
+    transition: all 0.5s;
+}
+.index-navbar .nav-item .nav-link.active:hover {
+    color: #ff4d58;
+}
+#index-carousel .carousel-indicators {
+    margin-bottom: 2px;
+}
+
+.footer-introduction {
+    display: flex;
+}
+.footer-introduction .text span {
+    display: block;
+    color: #fff;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.footer-introduction .text span:first {
+    font-size: 17px;
+    display: block;
+    color: #fff;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.footer-introduction .text span:last-child {
+    font-size: 13px;
+    margin-bottom: -5px;
+}
+.footer-introduction .mdi {
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin-right: 14px;
+}
+
+.qrcode .weixin,
+.qrcode .onlineshop {
+    width: 50%;
+}
+.qrcode .weixin span,
+.qrcode .onlineshop span {
+    display: block;
+    margin: 15px auto;
+    color: #fff;
+    text-align: center;
+}
+.index-footer .form-control {
+    flex: 1;
+}
+.index-footer h4 {
+    text-align: left;
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.index-footer label {
+    padding-top: 6px;
+    font-size: 17px;
+    color: #fff;
+}
+.index-footer button {
+    width: 120px;
+}
+.copyright {
+    border-top: 2px solid #eee;
+}
+.copyright span {
+    display: block;
+    flex: 1;
+    text-align: center;
+    line-height: 22px;
+    color: #f4f4f4;
+    font-size: 14px;
+}
+.introduction-header {
+    width: 100%;
+    height: 64px;
+    padding: 4px;
+    background-color: #f08437;
+    border-radius: 40px;
+}
+.introduction-title {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f2f2f2;
+    border-radius: 40px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.introduction-article {
+    width: 100%;
+    margin: auto;
+}
+.introduction-article p {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    margin-top: 14px;
+    margin-bottom: 2px;
+}
+.height-90 {
+    height: 90px !important;
+}
+.index-service .mui-grid-view.mui-grid-9,
+.index-food-item .mui-grid-view.mui-grid-9 {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    background-color: #fff;
+}
+.index-service .mui-grid-view.mui-grid-9 .mui-table-view-cell,
+.index-food-item .mui-grid-view.mui-grid-9 .mui-table-view-cell {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0px 15px;
+}
+.index-food-item .mui-media-body {
+    color: #01998c !important;
+}
+.hexagon-bg {
+    width: 62px;
+    height: 71px;
+    background: url(../images/hexagon.png);
+    margin: auto;
+}
+.hexagon-bg .iconfont {
+    line-height: 70px;
+    font-size: 30px;
+    color: #fff;
+}
+.mui-segmented-control .mui-control-item {
+    width: 100px;
+}
+.mui-segmented-control {
+    border-radius: 0;
+    border: 1px solid #00998c;
+}
+.mui-segmented-control .mui-control-item.mui-active {
+    color: #fff;
+    background-color: #00998c;
+}
+.mui-segmented-control .mui-control-item {
+    color: #00998c;
+    border-color: #00998c;
+    border-left: 1px solid #00998c;
+}
+.product_item_ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.product_item_ul li {
+    width: 50%;
+}
+.mui-pagination > li > a,
+.mui-pagination > li > span {
+    color: #00998c;
+}
+.mui-pagination > li.mui-active > a,
+.mui-pagination > li.mui-active > a:active,
+.mui-pagination > li.mui-active > span,
+.mui-pagination > li.mui-active > span:active,
+.mui-pagination > li:active > a,
+.mui-pagination > li:active > a:active,
+.mui-pagination > li:active > span,
+.mui-pagination > li:active > span:active {
+    border-color: #00998c;
+    background-color: #00998c;
+}
+.news_info_item_title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #f00;
+    padding: 11px 0 4px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+.news_info_item_title_sub {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #666;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.news_info_item_title_sub span {
+    color: #555;
+}
+.news_info_item_title_sub span:nth-child(even) {
+    margin-right: 14px;
+}
+.news_info_item_title_sub span.mdi {
+    margin-right: 6px;
+}
+.news_info_content_text_zf {
+    display: block;
+    text-indent: 2rem;
+    line-height: 2;
+}
+.news_info_ranking_item_title {
+    font-size: 24px;
+    padding: 50px 0 8px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+
+    text-align: left;
+}
+.news_info_content_zf {
+    font-size: 12px;
+}
